@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainframe{
+    display: grid;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 5px;
+    grid-template-areas: 'screen screen screen screen' 'changecolor changecolor changebgcolor changebgcolor' 'clear reset percent delete' 'seven eight nine division' 'four five six multiply' 'one two three minus' 'zero dot equal plus';
+    margin: auto;
+}
+
+#changecolor,#changebgcolor{
+    grid-area: changecolor;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    margin-right: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+#changebgcolor{
+    grid-area: changebgcolor;
+}
+
+#screen{
+    grid-area: screen;
+    border: 2px solid lightgray;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    text-align: right;
+}
+
+.styleme{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.styleme:active{
+    color: gold !important;
+    background: crimson !important;
+}
+
+
+body{
+    position: relative;
+}
+
+#invalidBanner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #00000073;
+    color: red;
+    font-size: 10vw;
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    text-align: center;
+}

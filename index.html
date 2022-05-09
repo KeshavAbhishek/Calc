@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node.js" defer></script>
+    <!-- <script src="node2.js" defer></script> -->
+</head>
+<body>
+    <div class="mainframe">
+        <input type="text" id="screen" readonly=true>
+        <button id="changecolor" onclick="cngcolor()">Change text color of buttons</button>
+        <button id="changebgcolor" onclick="cngbgcolor()">Change background color of buttons</button>
+        <button id="clear" class="styleme">C</button>
+        <button id="reset" class="styleme">R</button>
+        <button id="percent" class="styleme">%</button>
+        <button id="delete" class="styleme">DEL</button>
+        <button id="seven" class="styleme">7</button>
+        <button id="eight" class="styleme">8</button>
+        <button id="nine" class="styleme">9</button>
+        <button id="division" class="styleme">/</button>
+        <button id="four" class="styleme">4</button>
+        <button id="five" class="styleme">5</button>
+        <button id="six" class="styleme">6</button>
+        <button id="multiply" class="styleme">X</button>
+        <button id="one" class="styleme">1</button>
+        <button id="two" class="styleme">2</button>
+        <button id="three" class="styleme">3</button>
+        <button id="minus" class="styleme">-</button>
+        <button id="zero" class="styleme">0</button>
+        <button id="dot" class="styleme">.</button>
+        <button id="equal" class="styleme">=</button>
+        <button id="plus" class="styleme">+</button>
+    </div>
+    <input type="color" style="display: none;" id="colorFont" oninput="colorFonts()">
+    <input type="color" style="display: none;" id="colorBackground" oninput="colorBackgrounds()">
+    <div id="invalidBanner">INVALID<br>OPERATION</div>
+</body>
+</html>
